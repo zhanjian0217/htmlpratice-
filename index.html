@@ -1,0 +1,121 @@
+<html>
+
+
+<head>
+
+    <title>Udemy Card Demo</title>
+
+    <style>
+        *{
+            border-radius: 5px
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            position: relative;
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ccc;
+            margin-right: 200px;
+            -webkit-box-shadow: -3px 8px 10px 0px #AAAAAA; 
+            box-shadow: -3px 8px 10px 0px #AAAAAA;
+    
+        }
+        .card2{
+            position: relative;
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ccc;
+            -webkit-box-shadow: -3px 8px 10px 0px #AAAAAA; 
+            box-shadow: -3px 8px 10px 0px #AAAAAA;
+        }
+        .card img{
+            display: block;
+            width: 100%;
+        }
+
+        .card h3{
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 10px;
+            
+        }
+        .container{
+            margin-top: 60px;
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            margin-top: 20px;
+
+        }
+
+        .title{
+            color: gray;
+        }
+        
+        button{
+            position: absolute;
+            bottom: 0;
+            display: block;
+            font-size: 18px;
+            width: 100%;
+            height: 50px;
+            border: none;
+            color: white;
+            background-color: #fd97a8;
+            
+        
+        }
+        .block{
+            background: 2px rgb(31, 44, 156) ;
+            border-radius: 2px;
+            margin: auto;
+            width: 30px;
+            height: 5px;
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="card">
+        <img src="./dog/140282866_2335585066586470_3194808320564874983_n.jpg" alt="狗勾">
+    
+        <h3>Subaru</h3>
+
+        <div class="block"></div>
+
+        <div class="container">
+            <div class="col">
+                <div class="title">ID</div>
+                <div class="description">123456</div>
+            </div>
+            <div class="col">
+                <div class="title">Age</div>
+                <div class="description">3 years</div>
+            </div>
+            <div class="col">
+                <div class="title">Registry</div>
+                <div class="description">AKC</div>
+            </div>
+        </div>
+        <button onclick="buttonAction()">View More</button>
+    </div>
+    <div class="card2"></div>
+
+
+    <script>
+        function buttonAction(){
+            alert("u click this button")
+        }
+    </script>
+
+
+</body>
+</html>
